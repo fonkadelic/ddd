@@ -101,8 +101,8 @@ body {
 #mainnav ul {
 	font-family: 'Passion One', cursive;	
 	font-size: 28px;
+	font-weight: normal;	
 	-webkit-font-smoothing: antialiased;
-/*	letter-spacing: 1px;*/
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -121,12 +121,12 @@ body {
 	opacity: 0.9;
 	filter: alpha(opacity=90);	
 	-webkit-user-select: none;
-	-moz-user-select: none;
-	user-select: none;	
+	   -moz-user-select: none;
+			user-select: none;	
 	-webkit-transition: color 0.3s, text-shadow 0.3s;	
-	-moz-transition: color 0.3s, text-shadow 0.3s;
-	-o-transition: color 0.3s, text-shadow 0.3s;
-	transition: color 0.3s, text-shadow 0.3s;
+	   -moz-transition: color 0.3s, text-shadow 0.3s;
+		 -o-transition: color 0.3s, text-shadow 0.3s;
+			transition: color 0.3s, text-shadow 0.3s;
 }
 
 #mainnav a:hover {
@@ -160,7 +160,11 @@ body {
 	width: 160px; height: 160px;
 	float: left;	
 	list-style: none;
-	background: url(../img/boxlogo_bg_sprite.png) no-repeat;	
+	background: url(../img/boxlogo_bg_sprite.png) no-repeat;
+	
+	-webkit-transition: box-shadow 0.4s;
+	   -moz-transition: box-shadow 0.4s;
+		    transition: box-shadow 0.4s;		
 }
 
 .boxlogos > li.white {
@@ -175,19 +179,31 @@ body {
 	background-position: -320px 0;		
 }
 
-.boxlogos a {
-	float:left; 
-	
-	-webkit-transition: box-shadow 0.4s;
-	   -moz-transition: box-shadow 0.4s;
-		 -o-transition: box-shadow 0.4s;
-		    transition: box-shadow 0.4s;
-}
-
-.boxlogos a:hover {
+.boxlogos > li:hover {
 	-webkit-box-shadow: inset 0px 0px 50px 8px #000;
 	   -moz-box-shadow: inset 0px 0px 50px 8px #000;
 	     	box-shadow: inset 0px 0px 50px 8px #000; /* inset offset-x offset-y blur spread color */
+}
+
+.boxlogos a {
+	float:left; 
+		
+	-webkit-transition: -webkit-transform 0.3s;
+	   -moz-transition:    -moz-transform 0.3s;
+	    -ms-transition:     -ms-transform 0.3s;
+	     -o-transition:      -o-transform 0.3s;
+	        transition:         transform 0.3s;
+
+}
+
+.boxlogos a:hover {
+	-webkit-transform: scale(0.95);  /* Saf3.1+, Chrome */
+	   -moz-transform: scale(0.95);  /* FF3.5+ */
+	    -ms-transform: scale(0.95);  /* IE9 */
+	     -o-transform: scale(0.95);  /* Opera 10.5+ */
+	        transform: scale(0.95);
+	           filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */
+	                   M11=0.9998625445384374, M12=-0.016579868187697525, M21=0.016579868187697525, M22=0.9998625445384374,SizingMethod='auto expand');
 }
 
 .social {
@@ -239,8 +255,8 @@ body {
 }
 
 #footer nav a:after { 
-	content: "●"; 
-	padding: 0 5px;
+	content: "•"; 
+	padding: 0 8px;
 	color: #555;
 	font-style: normal; 
 } 
