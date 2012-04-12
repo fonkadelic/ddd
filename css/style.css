@@ -178,19 +178,16 @@ body {
 .boxlogos a {
 	float:left; 
 	
-	-webkit-transition: box-shadow 0.2s, -webkit-transform 0.2s;
-	   -moz-transition: box-shadow 0.2s, -moz-transform 0.2s;
-		 -o-transition: box-shadow 0.2s, -o-transform 0.2s;
-		    transition: box-shadow 0.2s, transform 0.2s;
+	-webkit-transition: box-shadow 0.4s;
+	   -moz-transition: box-shadow 0.4s;
+		 -o-transition: box-shadow 0.4s;
+		    transition: box-shadow 0.4s;
 }
 
 .boxlogos a:hover {
-	box-shadow: #000 0px 0px 20px;
-	
-	-webkit-transform: scale(1.05);
-	   -moz-transform: scale(1.05);
-		 -o-transform: scale(1.05);
-		    transform: scale(1.05);
+	-webkit-box-shadow: inset 0px 0px 50px 8px #000;
+	   -moz-box-shadow: inset 0px 0px 50px 8px #000;
+	     	box-shadow: inset 0px 0px 50px 8px #000; /* inset offset-x offset-y blur spread color */
 }
 
 .social {
