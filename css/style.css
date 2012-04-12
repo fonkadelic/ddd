@@ -101,6 +101,7 @@ body {
 #mainnav ul {
 	font-family: 'Passion One', cursive;	
 	font-size: 28px;
+	-webkit-font-smoothing: antialiased;
 /*	letter-spacing: 1px;*/
 	text-align: center;
 	text-transform: uppercase;
