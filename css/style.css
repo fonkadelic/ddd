@@ -159,7 +159,20 @@ body {
 .boxlogos > li {
 	width: 160px; height: 160px;
 	float: left;	
-	list-style: none;	
+	list-style: none;
+	background: url(../img/boxlogo_bg_sprite.png) no-repeat;	
+}
+
+.boxlogos > li.white {
+	background-position: 0 0;
+}
+
+.boxlogos > li.grey {
+	background-position: -160px 0;	
+}
+
+.boxlogos > li.yellow {
+	background-position: -320px 0;		
 }
 
 .boxlogos a {
