@@ -199,13 +199,13 @@ body {
 }
 
 .boxlogos > li:hover img {
-	-webkit-transform: scale(0.9);  /* Saf3.1+, Chrome */
-	   -moz-transform: scale(0.9);  /* FF3.5+ */
-	    -ms-transform: scale(0.9);  /* IE9 */
-	     -o-transform: scale(0.9);  /* Opera 10.5+ */
-	        transform: scale(0.9);
-	           filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */
-	                   M11=0.9998625445384374, M12=-0.016579868187697525, M21=0.016579868187697525, M22=0.9998625445384374,SizingMethod='auto expand');
+  -webkit-transform: scale(0.9); 
+     -moz-transform: scale(0.9); 
+      -ms-transform: scale(0.9); 
+       -o-transform: scale(0.9); 
+          transform: scale(0.9);
+             filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */
+                     M11=0.9998766324816606, M12=-0.015707317311820675, M21=0.015707317311820675, M22=0.9998766324816606,SizingMethod='auto expand');
 }
 
 .social {
