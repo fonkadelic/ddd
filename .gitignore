@@ -17,3 +17,6 @@ tmtags
 .*.sw[a-z]
 *.un~
 Session.vim
+
+## HTML5-Boilerplate
+intermediate
